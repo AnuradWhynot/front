@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap%27');
+
+
+.myColor {
+    color: #29190d;
+}
+
+.myFontSize {
+    font-size: 46px;
+}
+
+.hr {
+    background-color: red;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.form .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input[type="text"] {
+    border:none;
+    border-bottom: 1px solid #041230;
+}
+
+.input[type="email"] {
+    border:none;
+    border-bottom: 1px solid #041230;
+}
+
+.textarea {
+    border:none;
+    border-bottom: 1px solid #041230;
+}
+
+
+.input, .textarea {
+    font-size: 13px;
+    padding: 11px 11px 11px 0;
+    min-width: auto;
+    letter-spacing: 1.4px;
+    line-height: 1.6;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input:focus, .textarea:focus {
+    outline: none;
+}
+.form .button {
+    padding: 10px;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    outline: none;
+    border: 1px solid #041230;
+    background: #29190d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*CARD*/ 
+
+.cardContainer {
+    text-align: center;
+    padding: 2px;
+    margin: auto;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between 3px;
+    align-items: center;
+
+}
+
+.cardContentContainer {
+    margin: top 3px;
+    margin-bottom: 1px;
+    letter-spacing: 1.8px;
+}
+
+.nameText {
+    font-size: larger;
+}
+
+.priceText {
+    font-size: larger;
+}
+
+.decText {
+    font-size: large;
+}
