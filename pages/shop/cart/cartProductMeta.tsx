@@ -13,9 +13,10 @@ import {
   
   export type CartProductMetaProps = {
     isGiftWrapping?: boolean
-    name: string
+    name: string 
     description: string
     image: string
+    
   }
   
   export const CartProductMeta = (props: CartProductMetaProps) => {

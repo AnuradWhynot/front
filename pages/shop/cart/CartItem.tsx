@@ -14,6 +14,7 @@ type CartItemProps = {
   imageUrl: string
   onChangeQuantity?: (quantity: number) => boolean
   onClickGiftWrapping?: () => boolean
+  CartItem?: (props: CartItemProps) => void
 }
 
 const QuantitySelect = (props: SelectProps) => {

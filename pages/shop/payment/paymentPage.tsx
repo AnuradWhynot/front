@@ -1,30 +1,39 @@
+import React from "react";
+import { Center, flexbox, Spinner, Flex, Container } from "@chakra-ui/react";
+import { Text, Button,  Link } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { CartProductMeta } from "../cart/cartProductMeta";
 
-import React from 'react';
-import {
-    Flex,
-  Box,
-  Heading,
-  Link,
-  Image,
-  Text,
-  Divider,
-  HStack,
-  Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
-  useColorModeValue,
-  Container,
-  VStack,
-} from '@chakra-ui/react';
-import axios from 'axios'
-
-const paymentPage = () => {
+export default function PaymentPage  (){
   return (
-    <Flex>
-        
-    </Flex>
-  )
-}
+        <Flex>
+          <Flex >
+            <Flex className="payment-row">
+            </Flex>
+            <Link href="/shop/cart/Cart">
+              <Button
+                rightIcon={<ExternalLinkIcon />}
+                colorScheme="teal"
+                mb={10}
+                size="lg"
+              >
+                Return to Cart items
+              </Button>
+            </Link>
+            <Flex className="payment-row">
+            </Flex>
+            <Link href="/shop/cart/Cart">
+              <Button
+                rightIcon={<ExternalLinkIcon />}
+                colorScheme="teal"
+                mb={10}
+                size="lg"
+              >
+                Return to Cart items
+              </Button>
+            </Link>
+            </Flex>
+            </Flex>
+  );
+};
 
-export default paymentPage;
