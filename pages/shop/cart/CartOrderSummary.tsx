@@ -64,6 +64,6 @@ import { useRouter } from 'next/router';
       </Stack>
     )
     function Checkout () {
-      router.push('../payment/paymentPage')
+      router.push('../paymentpage')
     }
   }

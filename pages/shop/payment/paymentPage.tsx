@@ -20,20 +20,19 @@ export default function PaymentPage  (){
                 Return to Cart items
               </Button>
             </Link>
-            <Flex className="payment-row">
-            </Flex>
-            <Link href="/shop/cart/Cart">
-              <Button
-                rightIcon={<ExternalLinkIcon />}
-                colorScheme="teal"
-                mb={10}
-                size="lg"
-              >
-                Return to Cart items
-              </Button>
-            </Link>
+
+<Flex>
+<Link fontSize="sm" textDecor="underline">
+QPay here
+</Link>
+<Flex
+align="center"
+justifyContent="right"
+></Flex>
+</Flex>
             </Flex>
             </Flex>
+            
   );
 };
 

@@ -20,7 +20,7 @@ import {
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
-const signUpPage = () => {
+const Verification = () => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue('gray.100', 'gray.700');
   const [data, setData] = useState([]);
@@ -78,7 +78,7 @@ const signUpPage = () => {
 
 
 
-export default signUpPage;
+export default Verification;
 
 // import React from 'react';
 // import { useState, useEffect } from 'react';

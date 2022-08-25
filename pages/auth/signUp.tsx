@@ -18,7 +18,7 @@ import { useRouter } from 'next/router';
 import { ReadableStreamBYOBRequest } from 'node:stream/web';
 import { resolveTypeReferenceDirective } from 'typescript';
 
-const signUpPage = () => {
+const SignUpPage = () => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue('gray.100', 'gray.700');
   const [ password, setPassword] = useState("");
@@ -130,6 +130,4 @@ const signUpPage = () => {
   }
 };
 
-
-
-export default signUpPage;
+export default SignUpPage;
