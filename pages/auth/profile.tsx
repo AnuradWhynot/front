@@ -12,8 +12,10 @@ import {
   Image,
 } from '@chakra-ui/react';
 import React from 'react';
+import { useState } from 'react';
 
-export default function SocialProfileSimple() {
+export default function MyProfile() {
+
   return (
     <Center py={6}>
       <Box
@@ -24,78 +26,24 @@ export default function SocialProfileSimple() {
         rounded={'lg'}
         p={6}
         textAlign={'center'}>
+        
         <Avatar
           size={'xl'}
           src={
-            'https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
+            'https://cdns-images.dzcdn.net/images/artist/1e4dc4c8f984e6c0a35318481d84dbc3/500x500.jpg'
           }
-          mb={4}
-          pos={'relative'}
-          _after={{
-            content: '""',
-            w: 4,
-            h: 4,
-            bg: 'green.300',
-            border: '2px solid white',
-            rounded: 'full',
-            pos: 'absolute',
-            bottom: 0,
-            right: 3,
-          }}
         />
         <Heading fontSize={'2xl'} fontFamily={'body'}>
-          Lindsey James
+          Name
         </Heading>
         <Text fontWeight={600} color={'gray.500'} mb={4}>
-          @lindsey_jam3s
+          @ or ID
         </Text>
-        <Text
-          textAlign={'center'}
-          color={useColorModeValue('gray.700', 'gray.400')}
-          px={3}>
-          Actress, musician, songwriter and artist. PM for work inquires or{' '}
-          <Link href={'#'} color={'blue.400'}>
-            #tag
-          </Link>{' '}
-          me in your posts
-        </Text>
-
-        <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #art
-          </Badge>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #photography
-          </Badge>
-          <Badge
-            px={2}
-            py={1}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            fontWeight={'400'}>
-            #music
-          </Badge>
-        </Stack>
 
         <Stack mt={8} direction={'row'} spacing={4}>
           <Button
             flex={1}
-            fontSize={'sm'}
-            rounded={'full'}
-            _focus={{
-              bg: 'gray.200',
-            }}>
-            Message
-          </Button>
-          <Button
-            flex={1}
+            
             fontSize={'sm'}
             rounded={'full'}
             bg={'blue.400'}
@@ -103,16 +51,16 @@ export default function SocialProfileSimple() {
             boxShadow={
               '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
             }
-            _hover={{
-              bg: 'blue.500',
-            }}
-            _focus={{
-              bg: 'blue.500',
-            }}>
-            Follow
+            >
+            Edit Profile
           </Button>
+          
         </Stack>
       </Box>
     </Center>
+    
   );
+};
+function Checkout () {
+  router.push('../paymentpage')
 }
