@@ -1,13 +1,20 @@
 import React from "react";
-import { Center, flexbox, Spinner, Flex, Container } from "@chakra-ui/react";
+import { Center, flexbox, Spinner, Flex, Container, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { Text, Button,  Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { CartProductMeta } from "../cart/cartProductMeta";
+import { CartProductMeta } from "../cart/CartProductMeta";
 
 export default function PaymentPage  (){
+  const { toggleColorMode } = useColorMode();
+  const formBackground = useColorModeValue('gray.100', 'gray.700');
   return (
-        <Flex>
-          <Flex >
+        <Flex h="100vh" alignItems="center" justifyContent="center">
+          <Flex 
+          flexDirection="column"
+          bg={formBackground}
+          p={12}
+          borderRadius={8}
+          boxShadow="lg">
             <Flex className="payment-row">
             </Flex>
             <Link href="/shop/cart/Cart">

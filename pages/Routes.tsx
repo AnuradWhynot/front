@@ -5,6 +5,9 @@ import { Switch } from '@chakra-ui/react';
 import Cart from './shop/cart/Cart';
 import PaymentPage from './shop/payment/paymentPage';
 import MyProfile from './auth/profile';
+import ChangeProfile from './auth/changeProfile';
+import ForgotPassword from './auth/forgotPassword';
+
 
 
 const Routes = () => {
@@ -15,8 +18,9 @@ const Routes = () => {
                 <Route path="/detail-page" element={<DetailPage />} />
                 <Route path="/cart-items" element={<Cart />} />
                 <Route path="/payment-page" element={<PaymentPage />} />
-                <Route path="/My-Profile" element={<MyProfile />} />
-                <Route path="/My-Profile" element={<MyProfile />} />
+                <Route path="/my-profile" element={<MyProfile />} />
+                <Route path="/change-profile" element={<ChangeProfile />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
             </Switch>
         </BrowserRouter>
     );

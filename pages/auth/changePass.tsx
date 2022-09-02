@@ -1,14 +1,65 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
 import {
-  Flex,
-  Heading,
-  Input,
-  Button,
-  FormControl,
-  FormLabel,
-  Switch,
-  useColorMode,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import axios from 'axios';
+    Button,
+    Flex,
+    FormControl,
+    FormLabel,
+    Heading,
+    Input,
+    Stack,
+    useColorModeValue,
+  } from '@chakra-ui/react';
+
+function changePass(): JSX.Element {
+    return(
+    <Flex
+    minH={'100vh'}
+    align={'center'}
+    justify={'center'}
+    bg={useColorModeValue('gray.50', 'gray.800')}>
+        <Stack
+         spacing={4}
+         w={'full'}
+         maxW={'md'}
+         bg={useColorModeValue('white', 'gray.700')}
+         rounded={'xl'}
+         boxShadow={'lg'}
+         p={6}
+         my={12}>
+             <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
+             Enter new password
+             </Heading>
+             <FormControl id="email" isRequired>
+             <FormLabel>Password</FormLabel>
+             <Input
+             placeholder="Password"
+            _placeholder={{ color: 'gray.500' }}
+            type="password"
+            />
+            </FormControl>
+            <FormControl id="password" isRequired>
+            <FormLabel>Re-Enter Password</FormLabel>
+            <Input 
+            type="password"
+            placeholder='Re-Enter Password' 
+            />
+            </FormControl>
+            <Stack spacing={6}>
+            <Button
+            bg={'blue.400'}
+            color={'white'}
+            _hover={{
+                bg: 'blue.500',
+                }}>
+                    Submit
+                    </Button>
+                  </Stack>
+                </Stack>
+            </Flex>
+            );
+            function changePass() {
+              if () {
+              }
+            }
+          }
+
+export default changePass

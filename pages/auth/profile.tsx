@@ -11,11 +11,12 @@ import {
   useColorModeValue,
   Image,
 } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import React from 'react';
-import { useState } from 'react';
+
 
 export default function MyProfile() {
-
+  const Router = useRouter();
   return (
     <Center py={6}>
       <Box
@@ -26,7 +27,7 @@ export default function MyProfile() {
         rounded={'lg'}
         p={6}
         textAlign={'center'}>
-        
+
         <Avatar
           size={'xl'}
           src={
@@ -42,8 +43,9 @@ export default function MyProfile() {
 
         <Stack mt={8} direction={'row'} spacing={4}>
           <Button
+          onClick={ChangeProfile}
             flex={1}
-            
+
             fontSize={'sm'}
             rounded={'full'}
             bg={'blue.400'}
@@ -54,13 +56,13 @@ export default function MyProfile() {
             >
             Edit Profile
           </Button>
-          
+
         </Stack>
       </Box>
     </Center>
-    
+
   );
+  function ChangeProfile () {
+    Router.replace("/auth/changeProfile")
+  }
 };
-function Checkout () {
-  router.push('../paymentpage')
-}

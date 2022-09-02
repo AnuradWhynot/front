@@ -1,7 +1,7 @@
 import { CloseButton, Flex, Link, Select, SelectProps, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { PriceTag } from './PriceTag'
-import { CartProductMeta } from './cartProductMeta'
+import { CartProductMeta } from './CartProductMeta'
 import axios from 'axios'
 
 type CartItemProps = {

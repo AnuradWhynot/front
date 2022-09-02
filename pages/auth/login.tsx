@@ -78,7 +78,8 @@ const Login = () => {
    router.push('/')
   }
 
-  function doenstHaveAcc() {
+  function hasNoAcc() {
+    
     router.push('/signUp')
   }
   
