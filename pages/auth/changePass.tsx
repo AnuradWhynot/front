@@ -8,8 +8,14 @@ import {
     Stack,
     useColorModeValue,
   } from '@chakra-ui/react';
+import router from 'next/router';
+import { useState } from 'react';
 
-function changePass(): JSX.Element {
+function ChangePass(): JSX.Element {
+  const HandlePasswordChange = (e) => setPassword(e.target.value)
+  const HandleRePasswordChange = (e) => setRePassword(e.target.value)
+  const [ password, setPassword] = useState("");
+  const [ rePassword, setRePassword] = useState("");
     return(
     <Flex
     minH={'100vh'}
@@ -28,12 +34,13 @@ function changePass(): JSX.Element {
              <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
              Enter new password
              </Heading>
-             <FormControl id="email" isRequired>
+             <FormControl id="password" isRequired>
              <FormLabel>Password</FormLabel>
              <Input
-             placeholder="Password"
+             placeholder="password"
             _placeholder={{ color: 'gray.500' }}
             type="password"
+            onChange={HandlePasswordChange}
             />
             </FormControl>
             <FormControl id="password" isRequired>
@@ -41,12 +48,14 @@ function changePass(): JSX.Element {
             <Input 
             type="password"
             placeholder='Re-Enter Password' 
+            onChange={HandleRePasswordChange}
             />
             </FormControl>
             <Stack spacing={6}>
             <Button
             bg={'blue.400'}
             color={'white'}
+            onClick={changePass}
             _hover={{
                 bg: 'blue.500',
                 }}>
@@ -57,9 +66,13 @@ function changePass(): JSX.Element {
             </Flex>
             );
             function changePass() {
-              if () {
+             if (password.length > 7&&rePassword.length > 7) {
+              if(password == rePassword) {
+                router.replace("/auth/login")
               }
+             }
+              
             }
           }
 
-export default changePass
+export default ChangePass

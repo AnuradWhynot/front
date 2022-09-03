@@ -7,6 +7,7 @@ import PaymentPage from './shop/payment/paymentPage';
 import MyProfile from './auth/profile';
 import ChangeProfile from './auth/changeProfile';
 import ForgotPassword from './auth/forgotPassword';
+import ChangePass from './auth/changePass';
 
 
 
@@ -21,6 +22,7 @@ const Routes = () => {
                 <Route path="/my-profile" element={<MyProfile />} />
                 <Route path="/change-profile" element={<ChangeProfile />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/change-pass" element={<ChangePass />} />
             </Switch>
         </BrowserRouter>
     );
