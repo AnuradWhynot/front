@@ -1,9 +1,7 @@
 import React from "react";
-import { Center, flexbox, Spinner, Flex, Container, useColorMode, useColorModeValue } from "@chakra-ui/react";
-import { Text, Button,  Link, Image, Box } from "@chakra-ui/react";
+import { Flex, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Button,  Link, Image, Box } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { CartProductMeta } from "../cart/CartProductMeta";
-import router from "next/router";
 
 export default function PaymentPage  (){
   const { toggleColorMode } = useColorMode();
@@ -21,7 +19,7 @@ export default function PaymentPage  (){
       <Link href="/shop/cart/Cart">
         <Button
         rightIcon={<ExternalLinkIcon />}
-        colorScheme="teal"
+        colorScheme="teal.400"
         mb={10}
         size="lg"
         textAlign='center'

@@ -11,11 +11,11 @@ import {
   } from '@chakra-ui/react';
   import { useRouter } from 'next/router';
   import { useState, useEffect } from 'react';
-  
+
   type ForgotPasswordFormInputs = {
     email: string;
   };
-  
+
   export default function ForgotPassword(): JSX.Element {
       const router = useRouter();
       const [ email, setEmail] = useState("");
@@ -50,10 +50,10 @@ import {
           <Stack spacing={6}>
             <Button
               onClick={SubmitEmail}
-              bg={'blue.400'}
+              bg={'teal.400'}
               color={'white'}
               _hover={{
-                bg: 'blue.500',
+                bg: 'teal.400',
               }}>
               Submit 
             </Button>

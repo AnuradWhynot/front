@@ -10,7 +10,7 @@ import {
 import * as React from 'react'
 import { CartItem } from './CartItem'
 import { CartOrderSummary } from './CartOrderSummary'
-import { cartData } from './_data'
+import { Data } from './_data'
 
 const cartPage = () => {
   return (
@@ -31,7 +31,7 @@ const cartPage = () => {
           </Heading>
 
           <Stack spacing="6">
-            {cartData.map((item) => (
+            {Data.map((item) => (
               <CartItem key={item.id} {...item} />
             ))}
           </Stack>
